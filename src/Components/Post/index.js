@@ -1,12 +1,12 @@
 import PostActions from "./PostActions";
 import PostTopBar from "./PostTopbar";
 
-export default function Post() {
+export default function Post(props) {
     return (
         <div class="post-container">
-            <PostTopBar />
+            <PostTopBar user={props.user} />
             <div class="post-image">
-                <img src="./assets/img/img1.jpg" alt="" />
+                <img src={props.imgID} alt="" />
             </div>
             <PostActions />
         </div>

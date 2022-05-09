@@ -1,65 +1,48 @@
-export default function Stories(){
-    return(
+import Storie from './Storie';
+
+export default function Stories() {
+
+    const users = [
+        {
+            name:'wowowiwo',
+            profile:'img1.png'
+        },
+        {
+            name:'9gag',
+            profile:'img2.png'
+        },
+        {
+            name:'barked',
+            profile:'img3.png'
+        },
+        {
+            name:'firminawww',
+            profile:'img4.png'
+        },
+        {
+            name:'afonsocardz',
+            profile:'img5.jpg'
+        },
+        {
+            name:'mewoed',
+            profile:'img6.png'
+        },
+        {
+            name:'etvarginha',
+            profile:'img7.png'
+        },
+        {
+            name:'respondeai',
+            profile:'img8.png'
+        }
+    ]
+
+    return (
         <div class="stories-box">
-                    <ul>
-                        <li>
-                            <div class="story">
-                                <a href="https://instagram.com" target="_blank"><img src="./assets/img/stories/img1.png" alt="" /></a>
-                            </div>
-                            <h3>wowowiwo</h3>
-
-                        </li>
-                        <li>
-                            <div class="story">
-                                <a href="https://instagram.com" target="_blank"><img src="./assets/img/stories/img2.png" alt="" /></a>
-                            </div>
-                            <h3>9gag</h3>
-                        </li>
-                        <li>
-                            <div class="story">
-                                <a href="https://instagram.com" target="_blank"><img src="./assets/img/stories/img3.png" alt="" /></a>
-                            </div>
-                            <h3>barked</h3>
-                        </li>
-                        <li>
-                            <div class="story">
-                                <a href="https://instagram.com" target="_blank"><img src="./assets/img/stories/img4.png" alt="" /></a>
-                            </div>
-                            <h3>firminawww</h3>
-                        </li>
-                        <li>
-                            <div class="story">
-                                <a href="https://instagram.com" target="_blank"><img src="./assets/img/stories/img5.jpg" alt="" /></a>
-                            </div>
-                            <h3>afonsocardz</h3>
-                        </li>
-                        <li>
-                            <div class="story">
-                                <a href="https://instagram.com" target="_blank"><img src="./assets/img/stories/img6.png" alt="" /></a>
-                            </div>
-                            <h3>mewoed</h3>
-                        </li>
-                        <li>
-                            <div class="story">
-                                <a href="https://instagram.com" target="_blank"><img src="./assets/img/stories/img7.png" alt="" /></a>
-                            </div>
-                            <h3>etvarginha</h3>
-                        </li>
-                        <li>
-                            <div class="story">
-                                <a href="https://instagram.com" target="_blank"><img src="./assets/img/stories/img8.png" alt="" /></a>
-                            </div>
-                            <h3>respondeai</h3>
-                        </li>
-                        <li>
-                            <div class="story">
-                                <a href="https://instagram.com" target="_blank"><img src="./assets/img/stories/img9.png" alt="" /></a>
-                            </div>
-                            <h3>ultimoinsta</h3>
-                        </li>
-                    </ul>
-                    <button><img src="./assets/img/arrow.svg" alt="" /></button>
-
-                </div>
+            <ul>
+                {users.map( user => <Storie name={user.name} picture={user.profile} />)}
+            </ul>
+            <button><img src="./assets/img/arrow.svg" alt="" /></button>
+        </div>
     );
 }

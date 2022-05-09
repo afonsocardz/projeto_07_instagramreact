@@ -1,10 +1,10 @@
-export default function Storie() {
+export default function Storie(props) {
     return (
         <li>
             <div class="story">
-                <a href="https://instagram.com" target="_blank"><img src="./assets/img/stories/img1.png" alt="" /></a>
+                <a href="https://instagram.com" target="_blank"><img src={"./assets/img/stories/" + props.picture} alt="" /></a>
             </div>
-            <h3>wowowiwo</h3>
+            <h3>{props.name}</h3>
         </li>
     );
 }
