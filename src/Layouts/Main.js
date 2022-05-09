@@ -1,11 +1,13 @@
 import Sidebar from "./Sidebar";
-import Feed from "./Content";
+import Content from "./Content";
+import MobileNav from "./MobileNav";
 
 export default function Main() {
     return (
         <>
             <Content />
             <Sidebar />
+            <MobileNav />
         </>
     );
 }

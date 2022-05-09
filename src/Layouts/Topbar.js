@@ -12,9 +12,6 @@ export default function Topbar(){
                 </div>
                 <div class="menu-desktop">
                     <ul>
-
-
-
                         <li>
                             <a href="https://instagram.com" target="_blank">
                                 <ion-icon name="paper-plane-outline"></ion-icon>
