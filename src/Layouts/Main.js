@@ -1,13 +1,12 @@
 import Sidebar from "./Sidebar";
 import Content from "./Content";
-import MobileNav from "./MobileNav";
+
 
 export default function Main() {
     return (
-        <>
+        <div class="content-container">
             <Content />
-            <Sidebar />
-            <MobileNav />
-        </>
+            <Sidebar /> 
+        </div>
     );
 }
